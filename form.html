@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>ご予約フォーム</title>
+       <link rel="stylesheet" href="common/style.css">
+       <script src="common/jquery-3.6.0.js"></script>
+       <script src="common/main.js"></script>
+</head>
+<body>
+       <header>
+
+              <div id="sns">
+                  <a href=""> <img src="images/btn-instagram.png" alt="INSTAGRAM" width="145"></a>
+                  <a href=""><img src="images/btn-facebook.png" alt="FACEBOOK" width="145"></a>
+              </div>         
+              <div id="logo">
+                  <img class="logo" src="images/cooltext425024103535974.png" href="./index.html" alt="YUMMY">
+              </div>
+              <div id="menu">
+                  <a class="flat border" href="form/form.html">ご予約</a>
+                  <button class="header__hamburger hamburger" id="js_ham">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </button>
+              </div>
+                
+      
+          </header>
+          <main>
+              <nav id="nav">
+                  <ul>
+                      <li><a href="#">SUMPLE1</a></li>
+                      <li><a href="#">SUMPLE2</a></li>
+                      <li><a href="#">SUMPLE3</a></li>
+                  </ul>
+              </nav>
+              <div class="picc">
+              <img style="margin-left: 35%;" id="pic" src="images/tennai.jpg" alt="画像が表示されません">
+              </div>
+      
+       <form class="form" action="form.php" method="post">
+       <p style="font-size: 2em;">予約フォーム</p>
+       <p>お名前
+       <input type="text" name="name" value="" placeholder="川﨑祐稀">
+       </p>
+       <p>ご来店人数
+       <input type="text" name="psn" value="" placeholder="x人">
+       </p>
+       <p><label for="date">予約日付</label>
+       <input type="date" name="date" value="2023-02-02" /></p>
+       <p><label for="time">予約時刻</label>
+       <input type="time" name="time" value="12:30" /></p>
+       <br><br>
+       <input type="submit" value="予約する">
+       </form>
+       </main>
+</body>
+</html>
